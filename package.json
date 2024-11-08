@@ -1,0 +1,25 @@
+{
+  "name": "namastereact",
+  "version": "1.0.0",
+  "description": "Manu repo",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manufg/namasteReact.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Manu FG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manufg/namasteReact/issues"
+  },
+  "homepage": "https://github.com/manufg/namasteReact#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
