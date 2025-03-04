@@ -6,7 +6,7 @@ const heading = React.createElement("h1", { id: "heading" }, "Namaste React"); /
 
 //JSX-HTML like or XML like syntax ( jsx is transpiled before it reaches the JS parcel -> Babel)
 //JSX-> React.Create Element -> React Element Js object -> HTMLElement(render)
-const jsxHeading = (
+const JsxHeading = () => (
   <h1 id="heading" className="Manu">
     Using JSX
   </h1>
@@ -26,10 +26,12 @@ const HeadingComponent0 = () => {
 const HeadingComponent1 = () => (
   //same
   //COMPONENT
-  <h1 className="heading"> Namste Manu </h1>
+  <h1 className="heading" tabIndex="5">
+    Namste Manu
+  </h1>
 );
 
 const HeadingComponent2 = () => <h1> Namste Manu </h1>; //Both syntax are for the same thing
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<HeadingComponent0 />);
+root.render(<JsxHeading />);
