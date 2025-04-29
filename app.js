@@ -6,32 +6,67 @@ const heading = React.createElement("h1", { id: "heading" }, "Namaste React"); /
 
 //JSX-HTML like or XML like syntax ( jsx is transpiled before it reaches the JS parcel -> Babel)
 //JSX-> React.Create Element -> React Element Js object -> HTMLElement(render)
-const JsxHeading = () => (
+// starting and closing bracket forms the start and end of JSX code 
+//this is a react element
+const JsxHeading =  (
   <h1 id="heading" className="Manu">
     Using JSX
-  </h1>
-);
+  </h1>);
+
+
+//without bracket also fine 
+const JsxHeading1 =  
+  <h1 id="heading" className="Manu"> Using JSX </h1>
+
+
+
 
 //React components
 //Class based components - OLD
 //Functional components - NEW
 
-//React functional component
+//React functional component: an arrow function that rturns some JSX 
+
+const Title = () => (
+ 
+  <h1 className="heading" tabIndex="5">
+    Namste Manu learning
+  </h1>
+
+
+);
 
 const HeadingComponent0 = () => {
-  //same  but this is beeter syntax with return
-  return <h1> Namaste Manu </h1>;
+  //same  but this is beeter syntax with return When you need to add logic before returning JSX: eg:
+  const name = "doodle";
+  return <h1> Namaste {name} </h1>;
+  //return <h1> Namaste Manu </h1>;
 };
 
+
+const value =100;
 const HeadingComponent1 = () => (
   //same
   //COMPONENT
-  <h1 className="heading" tabIndex="5">
+  // Any js expression inside {} will be evaluated and rendered 
+  // using react element inside a component
+  // <Title/> or <Title></Title>
+  <div id="container">
+    <h2>{value}</h2> 
+    <Title/> 
+      <h1 className="heading" tabIndex="5">
     Namste Manu
   </h1>
+  </div>
+
 );
 
-const HeadingComponent2 = () => <h1> Namste Manu </h1>; //Both syntax are for the same thing
+
+
+// HeadingComponent0 and HeadingComponent2 are the same thing
+
+const HeadingComponent2 = () => <h1 classsName= "heading"> Namste Manu one line  </h1>; //Both syntax are for the same thing
+ 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<JsxHeading />);
+root.render(<HeadingComponent1/>);
