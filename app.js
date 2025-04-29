@@ -28,7 +28,7 @@ const JsxHeading1 =
 //React functional component: an arrow function that rturns some JSX 
 
 const Title = () => (
- 
+  
   <h1 className="heading" tabIndex="5">
     Namste Manu learning
   </h1>
@@ -54,6 +54,8 @@ const HeadingComponent1 = () => (
   <div id="container">
     <h2>{value}</h2> 
     <Title/> 
+    <Title></Title>
+    {Title()}
       <h1 className="heading" tabIndex="5">
     Namste Manu
   </h1>
