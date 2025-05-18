@@ -1,6 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+
+
+/**
+ * 
+ * Header 
+ *   - Logo
+ *  - Nav Items
+ * * Body
+ *   - Search bar
+ *   - Restaurant Container
+ * *     - Restaurant Card
+ * Footer
+ *    -Copyright
+ *   - Links
+ * *   - Address
+ * *   - Contact
+ * *   - Social Media Links
+ */
+
 //React.createElement -> React Element Js object -> HTMLElement(render)
 const heading = React.createElement("h1", { id: "heading" }, "Namaste React"); // this is not a html element it is an object
 
